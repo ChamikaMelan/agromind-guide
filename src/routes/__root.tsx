@@ -29,14 +29,11 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "AgroMind — AI-Driven Platform for Paddy Farmers" },
+      { name: "description", content: "AI-powered smart agriculture platform for Sri Lankan paddy farmers — pest prediction, weed detection, crop planning and post-harvest advisory." },
+      { name: "author", content: "AgroMind Research Team · SLIIT" },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       {
