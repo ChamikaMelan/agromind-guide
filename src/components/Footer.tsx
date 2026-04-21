@@ -31,9 +31,9 @@ export function Footer() {
         <div>
           <h4 className="font-semibold mb-3 text-sm">Contact</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li className="flex items-center gap-2"><Mail className="w-4 h-4 text-primary" /> agromind.research@sliit.lk</li>
-            <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-primary" /> +94 11 754 4801</li>
-            <li className="flex items-center gap-2"><MapPin className="w-4 h-4 text-primary" /> SLIIT, Malabe, Sri Lanka</li>
+            <li className="flex items-center gap-2"><Mail className="w-4 h-4 text-primary" /><span>agromind.research@sliit.lk</span></li>
+            <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-primary" /><span>+94 11 754 4801</span></li>
+            <li className="flex items-center gap-2"><MapPin className="w-4 h-4 text-primary" /><span>SLIIT, Malabe, Sri Lanka</span></li>
           </ul>
         </div>
       </div>
