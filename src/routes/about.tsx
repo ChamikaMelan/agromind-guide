@@ -16,34 +16,34 @@ export const Route = createFileRoute("/about")({
 
 const team = [
   {
-    name: "K. A. Perera",
+    name: "Thambugala T.G.H.D",
     role: "Team Lead · Pest Prediction",
-    email: "it21000001@my.sliit.lk",
+    email: "it22906762@my.sliit.lk",
     desc: "Specialises in time-series ML and pest outbreak forecasting using Random Forest & XGBoost ensembles.",
   },
   {
-    name: "S. M. Fernando",
+    name: "Rodrigo K.A.A.L",
     role: "Weed Detection",
-    email: "it21000002@my.sliit.lk",
+    email: "it22364074@my.sliit.lk",
     desc: "Computer vision researcher building lightweight MobileNetV2 models optimised for offline mobile inference.",
   },
   {
-    name: "R. D. Jayasinghe",
-    role: "Crop Planning",
-    email: "it21000003@my.sliit.lk",
+    name: "Wijesinghe M.D.C.M",
+    role: "Crop Establishment Planning",
+    email: "it22330932@my.sliit.lk",
     desc: "Geospatial analytics enthusiast integrating satellite NDVI and soil data into ML-driven planning advisories.",
   },
   {
-    name: "N. P. Wickramasinghe",
+    name: "Dilakshan K",
     role: "Post-Harvest Advisory",
-    email: "it21000004@my.sliit.lk",
+    email: "it22339942@my.sliit.lk",
     desc: "Works on price forecasting and storage optimisation using LSTM + XGBoost hybrid pipelines.",
   },
 ];
 
 const supervisors = [
-  { name: "Dr. A. Senanayake", role: "Supervisor" },
-  { name: "Ms. P. Rathnayake", role: "Co-Supervisor" },
+  { name: "Lokesha Weerasinghe ", role: "Supervisor" },
+  { name: "Shalini Rupasinghe ", role: "Co-Supervisor" },
 ];
 
 function AboutPage() {
