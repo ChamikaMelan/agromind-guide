@@ -15,7 +15,11 @@ export const Route = createFileRoute("/presentations")({
 });
 
 const decks = [
-  { title: "Proposal Slides", date: "March 2025", desc: "Initial pitch — problem, gap, proposed solution and expected impact." },
+  { title: "Proposal Slides", date: "March 2025", desc: "Initial pitch — problem, gap, proposed solution and expected impact." ,
+    view: "https://drive.google.com/file/d/1HV_D6Ij0w__6wYEeDvCFSAqkLtbxdZr3/preview",
+    download: "https://drive.google.com/uc?export=download&id=1HV_D6Ij0w__6wYEeDvCFSAqkLtbxdZr3"
+  },
+  
   { title: "Progress 1 Slides", date: "July 2025", desc: "Mid-research review — datasets collected, baseline models and early results." },
   { title: "Progress 2 Slides", date: "November 2025", desc: "Late-stage update — integrated platform, validation results and field testing." },
   { title: "Final Presentation Slides", date: "February 2026", desc: "Complete project demonstration with metrics, impact and conclusions." },
@@ -43,9 +47,24 @@ function PresentationsPage() {
               <div className="p-6">
                 <h3 className="font-bold text-lg mb-2">{d.title}</h3>
                 <p className="text-sm text-muted-foreground mb-5">{d.desc}</p>
-                <button className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border text-sm font-semibold hover:bg-primary hover:text-primary-foreground hover:border-primary transition-smooth">
-                  <Download className="w-4 h-4" /> Download Slides
-                </button>
+                <div className="flex gap-3">
+  <a
+    href={d.view}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-semibold hover:opacity-90 transition-smooth"
+  >
+    <Presentation className="w-4 h-4" /> Open Slides
+  </a>
+
+  <a
+    href={d.download}
+    download
+    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border text-sm font-semibold hover:bg-primary hover:text-primary-foreground hover:border-primary transition-smooth"
+  >
+    <Download className="w-4 h-4" /> Download Slides
+  </a>
+</div>
               </div>
             </div>
           ))}
