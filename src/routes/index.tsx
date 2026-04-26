@@ -36,7 +36,7 @@ const benefits = [
 const modules = [
   { icon: Bug, title: "Pest Prediction", desc: "Forecast pest outbreaks 12 days in advance using Random Forest + XGBoost on weather and field data.", to: "/domain" },
   { icon: Leaf, title: "Weed Detection", desc: "Identify weeds instantly with a lightweight MobileNetV2 vision model that runs on-device.", to: "/domain" },
-  { icon: Map, title: "Crop Planning", desc: "Recommend optimal varieties, sowing dates and zones using ML and geospatial intelligence.", to: "/domain" },
+  { icon: Map, title: "Crop Establishment Planning", desc: "Recommend optimal varieties, sowing dates and zones using ML and geospatial intelligence.", to: "/domain" },
   { icon: Warehouse, title: "Post-Harvest Advisory", desc: "Cut storage losses and time market sales with XGBoost + LSTM price and demand forecasts.", to: "/domain" },
 ];
 
@@ -144,7 +144,7 @@ function HomePage() {
                 <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">A complete AI co-pilot for paddy cultivation</h2>
               </div>
               <p className="lg:col-span-2 text-muted-foreground leading-relaxed text-lg animate-fade-up">
-                AgroMind unifies four AI modules — pest prediction, weed detection, crop planning and post-harvest
+                AgroMind unifies four AI modules — pest prediction, weed detection, crop establishment planning and post-harvest
                 advisory — into one mobile experience. Built for Sri Lankan smallholder farmers, it turns weather,
                 soil, image and market data into clear, actionable recommendations that improve yield, cut input
                 costs and protect post-harvest margins.
