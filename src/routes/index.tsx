@@ -27,14 +27,14 @@ export const Route = createFileRoute("/")({
 });
 
 const benefits = [
-  { icon: Clock, value: "12-day", label: "Early pest warning" },
+  { icon: Clock, value: "7-day", label: " Early pest foracsting " },
   { icon: Coins, value: "28%", label: "Reduction in herbicide costs" },
   { icon: TrendingUp, value: "18%", label: "Increase in net profit" },
   { icon: ShieldCheck, value: "LKR 52,400", label: "Economic benefit per hectare" },
 ];
 
 const modules = [
-  { icon: Bug, title: "Pest Prediction", desc: "Forecast pest outbreaks 12 days in advance using Random Forest + XGBoost on weather and field data.", to: "/domain" },
+  { icon: Bug, title: "Pest Prediction with pest manage", desc: "Forecast pest outbreaks 7 days forcast in advance using Random Forest + XGBoost on weather and field data with YOLO detection.", to: "/domain" },
   { icon: Leaf, title: "Weed Detection", desc: "Identify weeds instantly with a lightweight MobileNetV2 vision model that runs on-device.", to: "/domain" },
   { icon: Map, title: "Crop Planning", desc: "Recommend optimal varieties, sowing dates and zones using ML and geospatial intelligence.", to: "/domain" },
   { icon: Warehouse, title: "Post-Harvest Advisory", desc: "Cut storage losses and time market sales with XGBoost + LSTM price and demand forecasts.", to: "/domain" },
@@ -43,11 +43,11 @@ const modules = [
 const featureSections = [
   {
     image: featurePest,
-    eyebrow: "Module 01 · Pest Prediction",
+    eyebrow: "Module 01 · Pest Prediction with pest manage",
     title: "Catch outbreaks before they spread",
     desc: "AgroMind fuses local weather feeds, soil moisture and historical infestation records to predict pest pressure up to 12 days before symptoms appear in the field.",
-    models: ["Random Forest", "XGBoost"],
-    benefits: ["12-day early warning", "Targeted spray windows", "Lower pesticide overuse"],
+    models: ["Random Forest", "XGBoost","YOLO"],
+    benefits: ["pest detection","7 day forcasting", "Targeted spray windows", "Lower pesticide overuse"],
   },
   {
     image: featureMobile,
