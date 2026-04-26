@@ -35,14 +35,14 @@ const sections = [
 ];
 
 const objectives = [
-  "Improve pest prediction with 12-day advance warnings",
+  "Improve pest prediction with pest detection using ensemble ML models trained on local outbreak and weather data",
   "Detect weeds accurately on-device, even offline",
   "Optimize crop establishment planning using ML + geospatial intelligence",
   "Reduce post-harvest losses through storage & market timing advisory",
 ];
 
 const methodology = [
-  { icon: Bug, title: "Pest Prediction", model: "Random Forest + XGBoost", desc: "Combines historical outbreak data, weather forecasts and crop stage to predict pest pressure 12 days ahead." },
+  { icon: Bug, title: "Pest Prediction with pest manage", model: "Random Forest + XGBoost + YOLO", desc: "Combines historical outbreak data, weather forecasts and crop stage to predict pest pressure 12 days ahead." },
   { icon: Leaf, title: "Weed Detection", model: "MobileNetV2 (TFLite)", desc: "Compact CNN trained on annotated paddy field images; runs offline on smartphones for instant herbicide recommendations." },
   { icon: Map, title: "Crop Establishment Planning", model: "ML + Geospatial", desc: "Uses satellite NDVI, soil profiles, rainfall patterns and farmer goals to recommend variety, sowing date and zone allocation." },
   { icon: Warehouse, title: "Post-Harvest Advisory", model: "XGBoost + LSTM", desc: "Forecasts price movement, optimal storage duration and best-time-to-sell to maximise net profit." },

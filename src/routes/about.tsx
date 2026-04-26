@@ -17,7 +17,7 @@ export const Route = createFileRoute("/about")({
 const team = [
   {
     name: "Thambugala T.G.H.D",
-    role: "Team Lead · Pest Prediction",
+    role: "Team Lead · Pest Prediction with pest Manage ",
     email: "it22906762@my.sliit.lk",
     desc: "Specialises in time-series ML and pest outbreak forecasting using Random Forest & XGBoost ensembles.",
   },
