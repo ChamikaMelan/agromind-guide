@@ -20,7 +20,10 @@ const decks = [
     download: "https://drive.google.com/uc?export=download&id=1HV_D6Ij0w__6wYEeDvCFSAqkLtbxdZr3"
   },
   
-  { title: "Progress 1 Slides", date: "July 2025", desc: "Mid-research review — datasets collected, baseline models and early results." },
+  { title: "Progress 1 Slides", date: "July 2025", desc: "Mid-research review — datasets collected, baseline models and early results." ,
+    view: "https://drive.google.com/file/d/1_JBL8egMox8stfLT2j9ssDx2Fygkuv3s/preview",
+    download: "https://drive.google.com/uc?export=download&id=1_JBL8egMox8stfLT2j9ssDx2Fygkuv3s"
+   },
   { title: "Progress 2 Slides", date: "November 2025", desc: "Late-stage update — integrated platform, validation results and field testing." },
   { title: "Final Presentation Slides", date: "February 2026", desc: "Complete project demonstration with metrics, impact and conclusions." },
 ];
