@@ -5,14 +5,6 @@ import { useState } from "react";
 import { z } from "zod";
 
 export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: "Contact — AgroMind" },
-      { name: "description", content: "Get in touch with the AgroMind research team at SLIIT." },
-      { property: "og:title", content: "Contact — AgroMind" },
-      { property: "og:description", content: "Reach out to the AgroMind team." },
-    ],
-  }),
   component: ContactPage,
 });
 

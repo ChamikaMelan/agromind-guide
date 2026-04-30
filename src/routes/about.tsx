@@ -3,14 +3,6 @@ import { PageShell, PageHeader } from "@/components/PageShell";
 import { Mail, User, GraduationCap } from "lucide-react";
 
 export const Route = createFileRoute("/about")({
-  head: () => ({
-    meta: [
-      { title: "About Us — AgroMind" },
-      { name: "description", content: "Meet the AgroMind research team and supervisors driving AI-powered paddy farming innovation." },
-      { property: "og:title", content: "About Us — AgroMind" },
-      { property: "og:description", content: "The team behind AgroMind." },
-    ],
-  }),
   component: AboutPage,
 });
 

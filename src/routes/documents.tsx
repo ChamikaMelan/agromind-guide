@@ -3,14 +3,6 @@ import { PageShell, PageHeader } from "@/components/PageShell";
 import { FileText, Download, CheckSquare, BookMarked, FileCheck2 } from "lucide-react";
 
 export const Route = createFileRoute("/documents")({
-  head: () => ({
-    meta: [
-      { title: "Documents — AgroMind" },
-      { name: "description", content: "Download AgroMind project documents: charter, proposal, final report and checklists." },
-      { property: "og:title", content: "Documents — AgroMind" },
-      { property: "og:description", content: "Project charter, proposal, final report and checklists for AgroMind." },
-    ],
-  }),
   component: DocumentsPage,
 });
 

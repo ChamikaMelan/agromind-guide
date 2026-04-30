@@ -5,14 +5,6 @@ import {
 } from "lucide-react";
 
 export const Route = createFileRoute("/domain")({
-  head: () => ({
-    meta: [
-      { title: "Project Domain — AgroMind" },
-      { name: "description", content: "Literature survey, research gap, problem, objectives, methodology and technologies behind the AgroMind paddy AI platform." },
-      { property: "og:title", content: "Project Domain — AgroMind" },
-      { property: "og:description", content: "The research foundation, methodology and technology stack of AgroMind." },
-    ],
-  }),
   component: DomainPage,
 });
 

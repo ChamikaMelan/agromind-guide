@@ -3,14 +3,6 @@ import { PageShell, PageHeader } from "@/components/PageShell";
 import { Presentation, Download } from "lucide-react";
 
 export const Route = createFileRoute("/presentations")({
-  head: () => ({
-    meta: [
-      { title: "Presentations — AgroMind" },
-      { name: "description", content: "Slide decks from AgroMind project milestones: proposal, progress and final presentations." },
-      { property: "og:title", content: "Presentations — AgroMind" },
-      { property: "og:description", content: "All AgroMind milestone slide decks." },
-    ],
-  }),
   component: PresentationsPage,
 });
 

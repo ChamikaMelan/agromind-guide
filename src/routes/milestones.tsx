@@ -3,14 +3,6 @@ import { PageShell, PageHeader } from "@/components/PageShell";
 import { CheckCircle2, Calendar } from "lucide-react";
 
 export const Route = createFileRoute("/milestones")({
-  head: () => ({
-    meta: [
-      { title: "Milestones — AgroMind" },
-      { name: "description", content: "Project timeline and key milestones for AgroMind: proposal, progress presentations, final presentation and viva." },
-      { property: "og:title", content: "Milestones — AgroMind" },
-      { property: "og:description", content: "Track AgroMind's research milestones from proposal to viva." },
-    ],
-  }),
   component: MilestonesPage,
 });
 

@@ -13,16 +13,6 @@ import {
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "AgroMind — AI-Driven Platform for Paddy Farmers" },
-      { name: "description", content: "AgroMind is an AI-powered smart agriculture platform helping Sri Lankan paddy farmers improve productivity, reduce losses, and optimize decisions across the full cultivation lifecycle." },
-      { property: "og:title", content: "AgroMind — AI-Driven Platform for Paddy Farmers" },
-      { property: "og:description", content: "Smart AI guidance for paddy cultivation: pest prediction, weed detection, crop planning and post-harvest advisory." },
-      { property: "og:image", content: heroImg },
-      { name: "twitter:image", content: heroImg },
-    ],
-  }),
   component: HomePage,
 });
 
