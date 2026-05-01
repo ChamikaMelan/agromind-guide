@@ -2,6 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { CountUp } from "@/components/CountUp";
+import { DottedSurface } from "@/components/ui/dotted-surface";
+import { SpiralAnimation } from "@/components/ui/spiral-animation";
 import heroImg from "@/assets/hero-paddy.jpg";
 import featurePest from "@/assets/feature-pest.jpg";
 import featureMobile from "@/assets/feature-mobile.jpg";
@@ -91,7 +93,10 @@ function HomePage() {
             width={1920}
             height={1080}
           />
+          {/* Gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-primary/70 to-primary-glow/60" />
+          {/* Animated dot-wave on top of overlay */}
+          <DottedSurface className="opacity-60" />
           <div className="relative max-w-7xl mx-auto px-6 py-32 text-primary-foreground">
             <div className="max-w-3xl animate-fade-up">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-sm border border-white/20 text-xs font-semibold tracking-wider uppercase mb-6">
@@ -357,7 +362,79 @@ function HomePage() {
           </div>
         </section>
 
-        {/* 9. CTA */}
+        {/* 9. DEMO VIDEO */}
+        <section className="py-24">
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="text-center max-w-2xl mx-auto mb-12 animate-fade-up">
+              <span className="text-xs font-semibold tracking-wider uppercase text-primary">Demo Video</span>
+              <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">See AgroMind in action</h2>
+              <p className="text-muted-foreground">
+                Watch the full platform walkthrough — from live pest prediction to market price forecasting on the mobile app.
+              </p>
+            </div>
+
+            <div className="animate-fade-up">
+              <div className="relative rounded-3xl overflow-hidden shadow-elegant border border-border bg-card">
+                {/* Aspect-ratio wrapper 16:9 */}
+                <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
+                  <iframe
+                    src="https://drive.google.com/file/d/1-tmJYHWuWV8Zx_OAE7O0c9HyXCER-yqq/preview"
+                    allow="autoplay; fullscreen"
+                    allowFullScreen
+                    className="absolute inset-0 w-full h-full"
+                    title="AgroMind Demo Video"
+                  />
+                </div>
+
+                {/* Bottom bar */}
+                <div className="flex items-center justify-between px-6 py-4 border-t border-border bg-card/80 backdrop-blur-sm">
+                  <div>
+                    <p className="font-semibold text-sm">AgroMind – Full Platform Demo</p>
+                    <p className="text-xs text-muted-foreground mt-0.5">AI-powered advisory for Sri Lankan paddy farmers</p>
+                  </div>
+                  <a
+                    href="https://drive.google.com/drive/folders/10HXM7iPWuyXJtMXGpVOvMcQQGgJcrhfI"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-semibold hover:bg-primary/90 hover:shadow-glow transition-smooth shrink-0"
+                  >
+                    Open in Drive
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 10. SPIRAL — Research Vision */}
+        <section className="relative overflow-hidden" style={{ height: '600px' }}>
+          {/* full-section spiral canvas */}
+          <div className="absolute inset-0">
+            <SpiralAnimation />
+          </div>
+
+          {/* radial vignette so edges fade to page bg */}
+          <div className="absolute inset-0 pointer-events-none" style={{
+            background: 'radial-gradient(ellipse 80% 80% at 50% 50%, transparent 30%, #0a1a0e 100%)'
+          }} />
+
+          {/* centered text overlay */}
+          <div className="relative h-full flex flex-col items-center justify-center text-center px-6 z-10">
+            <span className="inline-block px-3 py-1 rounded-full bg-[#7eca5e]/20 text-[#7eca5e] text-xs font-bold tracking-widest uppercase mb-4 animate-fade-up">
+              Research Vision
+            </span>
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 animate-fade-up" style={{ animationDelay: '80ms' }}>
+              Intelligence that grows<br />
+              <span style={{ color: '#a8e890' }}>with every harvest</span>
+            </h2>
+            <p className="text-white/70 max-w-xl text-base md:text-lg leading-relaxed animate-fade-up" style={{ animationDelay: '160ms' }}>
+              AgroMind's AI continuously learns from field data across Sri Lanka —
+              turning each season's observations into sharper predictions for the next.
+            </p>
+          </div>
+        </section>
+
+        {/* 11. CTA */}
         <section className="py-24">
           <div className="max-w-5xl mx-auto px-6">
             <div className="relative overflow-hidden rounded-3xl bg-gradient-hero p-12 md:p-16 text-center shadow-elegant">
